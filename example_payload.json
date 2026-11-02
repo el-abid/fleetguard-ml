@@ -1,0 +1,53 @@
+{
+  "vehicle_id": "VH-001",
+  "vehicle_model": "Dacia Dokker",
+  "driver_name": "Said Youlakou",
+  "trip_route": "Casablanca -> Rabat",
+  "trip_distance_km": 87,
+  "trip_duration_seconds": 14400,
+  "fuel_tank_capacity_l": 50,
+  "fuel_level_start_l": 41.9,
+  "fuel_level_l": 34.8,
+  "fuel_added_l": 0,
+  "idle_duration_seconds": 0,
+  "vehicle_reference": {
+    "vehicle_id": "VH-001",
+    "vehicle_name": "Dacia Dokker",
+    "vehicle_type": "Van",
+    "fuel_type": "Diesel",
+    "fuel_capacity_liters": 50,
+    "reference_consumption_l_100km": 5.5,
+    "status": "active"
+  },
+  "consumption_analysis": {
+    "trip_distance_km": 87,
+    "fuel_start_l": 41.9,
+    "fuel_added_l": 0,
+    "fuel_end_l": 34.8,
+    "calculated_fuel_used_l": 7.1,
+    "reference_consumption_l_100km": 5.5,
+    "expected_fuel_for_trip_l": 4.79,
+    "calculated_actual_consumption_l_100km": 8.16,
+    "fuel_difference_l": 2.32,
+    "deviation_l_100km": 2.66,
+    "deviation_percent": 48.38,
+    "overconsumption_percent": 48.38,
+    "consumption_direction": "ABOVE_REFERENCE"
+  },
+  "anomaly_detection": {
+    "is_anomaly": true,
+    "anomaly_count": 1,
+    "anomalies": [
+      {
+        "type": "OVERCONSUMPTION",
+        "detected": true,
+        "value": 48.38,
+        "unit": "%"
+      }
+    ],
+    "metrics": {
+      "deviation_percent": 48.38,
+      "idle_ratio_percent": 0
+    }
+  }
+}
